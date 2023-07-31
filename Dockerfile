@@ -14,4 +14,4 @@ RUN mkdir /sc20
 RUN mv /etc/java-8-openjdk/security/java.security /etc/java-8-openjdk/security/java.security.backup
 COPY ./java.security /etc/java-8-openjdk/security/java.security
 WORKDIR /sc20/
-ENTRYPOINT [ "sh", "/auto_build.sh"]
+ENTRYPOINT [ "sh", "./auto_build.sh"]
