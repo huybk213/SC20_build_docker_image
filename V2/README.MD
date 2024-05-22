@@ -5,4 +5,5 @@
     + sudo docker attach CONTAINER_ID
     + cd sc20
     + source build/envsetup.sh
+    + lunch msm8909-eng
     + make -j8
