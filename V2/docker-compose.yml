@@ -1,0 +1,12 @@
+version: "2.0"
+services:
+ sc20:
+  image: sc20
+  container_name: sc20
+  env_file:
+   - .env
+  stdin_open: true
+  tty: true
+  volumes:
+   - ${AOSP_SOURCE}:/sc20
+ #command: source build/envsetup.sh
